@@ -1,10 +1,3 @@
-//
-//  Enemy.cpp
-//  emptyExample
-//
-//  Created by Jane Friedhoff on 2/23/14.
-//
-//
 
 #include "Enemy.h"
 

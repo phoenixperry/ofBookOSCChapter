@@ -1,14 +1,13 @@
 //
 //  Bullet.h
-//  emptyExample
+//  OfBookOsc
 //
-//  Created by Jane Friedhoff on 3/1/14.
+//  Created by Phoenix Perry on 3/3/14.
 //
 //
 
-#ifndef __emptyExample__Bullet__
-#define __emptyExample__Bullet__
-
+#ifndef __OfBookOsc__Bullet__
+#define __OfBookOsc__Bullet__
 #include <iostream>
 #include "ofMain.h"
 
@@ -28,5 +27,4 @@ public:
     
     ofImage * img;
 };
-
-#endif /* defined(__emptyExample__Bullet__) */
+#endif /* defined(__OfBookOsc__Bullet__) */

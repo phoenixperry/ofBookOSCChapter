@@ -1,13 +1,13 @@
 //
 //  Player.h
-//  emptyExample
+//  OfBookOsc
 //
-//  Created by Jane Friedhoff on 2/23/14.
+//  Created by Phoenix Perry on 3/3/14.
 //
 //
 
-#ifndef __emptyExample__Player__
-#define __emptyExample__Player__
+#ifndef __OfBookOsc__Player__
+#define __OfBookOsc__Player__
 
 #include <iostream>
 #include "ofMain.h"
@@ -34,5 +34,4 @@ public:
 };
 
 
-
-#endif /* defined(__emptyExample__Player__) */
+#endif /* defined(__OfBookOsc__Player__) */

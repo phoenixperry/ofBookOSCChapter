@@ -1,13 +1,13 @@
 //
 //  Enemy.h
-//  emptyExample
+//  OfBookOsc
 //
-//  Created by Jane Friedhoff on 2/23/14.
+//  Created by Phoenix Perry on 3/3/14.
 //
 //
 
-#ifndef __emptyExample__Enemy__
-#define __emptyExample__Enemy__
+#ifndef __OfBookOsc__Enemy__
+#define __OfBookOsc__Enemy__
 
 #include <iostream>
 #include "ofMain.h"
@@ -30,4 +30,4 @@ public:
     ofImage * img;
 };
 
-#endif /* defined(__emptyExample__Enemy__) */
+#endif /* defined(__OfBookOsc__Enemy__) */

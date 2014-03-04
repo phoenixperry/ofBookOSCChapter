@@ -1,11 +1,3 @@
-//
-//  Bullet.cpp
-//  emptyExample
-//
-//  Created by Jane Friedhoff on 3/1/14.
-//
-//
-
 #include "Bullet.h"
 
 void Bullet::setup(bool f_p, ofPoint p, float s, ofImage * bullet_image) {

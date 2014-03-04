@@ -1,14 +1,3 @@
-//
-//  Life.h
-//  emptyExample
-//
-//  Created by Jane Friedhoff on 3/2/14.
-//
-//
-
-#ifndef __emptyExample__Life__
-#define __emptyExample__Life__
-
 #include <iostream>
 #include "ofMain.h"
 
@@ -25,5 +14,3 @@ public:
     void draw();
     
 };
-
-#endif /* defined(__emptyExample__Life__) */

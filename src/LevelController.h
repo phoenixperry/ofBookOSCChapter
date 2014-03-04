@@ -1,13 +1,13 @@
 //
 //  LevelController.h
-//  emptyExample
+//  OfBookOsc
 //
-//  Created by Jane Friedhoff on 2/23/14.
+//  Created by Phoenix Perry on 3/3/14.
 //
 //
 
-#ifndef __emptyExample__LevelController__
-#define __emptyExample__LevelController__
+#ifndef __OfBookOsc__LevelController__
+#define __OfBookOsc__LevelController__
 
 #include <iostream>
 #include "ofMain.h"
@@ -22,5 +22,4 @@ public:
     bool should_spawn();
     
 };
-
-#endif /* defined(__emptyExample__LevelController__) */
+#endif /* defined(__OfBookOsc__LevelController__) */

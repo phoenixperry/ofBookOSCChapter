@@ -1,21 +1,13 @@
-//
-//  Player.cpp
-//  emptyExample
-//
-//  Created by Jane Friedhoff on 2/23/14.
-//
-//
-
 #include "Player.h"
 
 void Player::setup(ofImage * _img) {
     lives = 3;
-
+    
     speed = 5;
     
     img = _img;
     width = height = img->width;
-
+    
     pos.x = ofGetWidth()/2;
     pos.y = ofGetHeight() - height * 2;
     

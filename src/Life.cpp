@@ -1,11 +1,3 @@
-//
-//  Life.cpp
-//  emptyExample
-//
-//  Created by Jane Friedhoff on 3/2/14.
-//
-//
-
 #include "Life.h"
 
 void Life::setup(ofImage * _img) {
