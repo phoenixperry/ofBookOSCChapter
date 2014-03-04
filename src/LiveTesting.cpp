@@ -10,7 +10,7 @@
 
 LiveTesting::LiveTesting(){
     sender.setup("192.168.0.4", 8000);
-    //this is the osc address of your ipad/android and the port it should be
+    //this is the ip address of your ipad/android and the port it should be
     //set to receive on
     
 	receiver.setup(8001);
