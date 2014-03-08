@@ -25,12 +25,7 @@ void testApp::setup(){
         max_enemy_shoot_interval = liveTest.max_enemy_shoot_interval;
         max_enemy_amplitude = liveTest.max_enemy_amplitude;
         level_controller.interval_time = liveTest.interval_time;
-        if(liveTest.triggerBonus)
-        {
-            Life l;
-            l.setup(&life_image);
-            bonuses.push_back(l);
-        }
+
     }
 }
 
@@ -60,7 +55,13 @@ void testApp::update(){
             enemies.push_back(e);
         }
         
-        liveTest.update(); 
+        liveTest.update();
+        if(liveTest.triggerBonus)
+        {
+            Life l;
+            l.setup(&life_image);
+            bonuses.push_back(l);
+        }
     }
     
 }
