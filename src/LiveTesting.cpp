@@ -9,7 +9,7 @@
 #include "LiveTesting.h"
 
 LiveTesting::LiveTesting(){
-    sender.setup("192.168.0.4", 8000);
+    sender.setup("192.168.0.11", 8000);
     //this is the ip address of your ipad/android and the port it should be
     //set to receive on
     
@@ -31,24 +31,49 @@ void LiveTesting::update()
         ofxOscMessage m;
         receiver.getNextMessage(&m);
         //parse the message 
+       
+        ofxOscMessage sendBack;
+               
         if(m.getAddress() == "/game/max_enemy_amplitude")
         {
             max_enemy_amplitude = m.getArgAsFloat(0);
+            
+            //these values send back to OSC to display the current settings for visual feedback
+            sendBack.addFloatArg(max_enemy_amplitude);
+            sendBack.setAddress("/updatedVals/max_enemy_amplitude");
+            sender.sendMessage(sendBack);
+            
             cout << max_enemy_amplitude << endl;
         }
         
         else if (m.getAddress() == "/game/interval_time")
         {
             interval_time = m.getArgAsInt32(0);
+            
+            //send visual feedback
+            sendBack.addIntArg(interval_time);
+            sendBack.setAddress("/updatedVals/interval");
+            sender.sendMessage(sendBack);
         }
         else if (m.getAddress() == "/game/max_enemy_shoot_interval")
         {
             max_enemy_shoot_interval = m.getArgAsFloat(0);
+            
+            //send visual feedback
+            sendBack.addFloatArg(max_enemy_shoot_interval);
+            sendBack.setAddress("/updatedVals/max_enemy_shoot_interval");
+            sender.sendMessage(sendBack);
+
         }
         else if (m.getAddress() == "/game/triggerBonus")
         {
             triggerBonus = m.getArgAsInt32(0);
             cout << triggerBonus << endl;
+            //send visual feedback
+            sendBack.addIntArg(triggerBonus);
+            sendBack.setAddress("/updatedVals/triggerBouns");
+            sender.sendMessage(sendBack);
+
             
         }
     }
