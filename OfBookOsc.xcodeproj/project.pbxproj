@@ -30,7 +30,6 @@
 		C630FBFD18CBDA23007A723B /* LevelController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C630FBF518CBDA23007A723B /* LevelController.cpp */; };
 		C630FBFE18CBDA23007A723B /* Life.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C630FBF718CBDA23007A723B /* Life.cpp */; };
 		C630FBFF18CBDA23007A723B /* LiveTesting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C630FBF918CBDA23007A723B /* LiveTesting.cpp */; };
-		C630FC0218CBDB19007A723B /* SpriteSingleton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C630FC0018CBDB19007A723B /* SpriteSingleton.cpp */; };
 		DAD3507F7E68721185639E54 /* PixelTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2847915984BAE4184E5B405B /* PixelTexture.cpp */; };
 		DDC69FA3E68C2FA504819464 /* ofxSpriteSheetRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3E71FF39F2A4961E51B3C093 /* ofxSpriteSheetRenderer.cpp */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
@@ -134,8 +133,6 @@
 		C630FBF818CBDA23007A723B /* Life.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Life.h; sourceTree = "<group>"; };
 		C630FBF918CBDA23007A723B /* LiveTesting.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LiveTesting.cpp; sourceTree = "<group>"; };
 		C630FBFA18CBDA23007A723B /* LiveTesting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveTesting.h; sourceTree = "<group>"; };
-		C630FC0018CBDB19007A723B /* SpriteSingleton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpriteSingleton.cpp; sourceTree = "<group>"; };
-		C630FC0118CBDB19007A723B /* SpriteSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteSingleton.h; sourceTree = "<group>"; };
 		C6937888E126BADC8777423B /* OscTypes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = OscTypes.h; path = ../../../addons/ofxOsc/libs/oscpack/src/osc/OscTypes.h; sourceTree = SOURCE_ROOT; };
 		D9BFFBBF4CC43DEE890B3C3E /* OscTypes.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = OscTypes.cpp; path = ../../../addons/ofxOsc/libs/oscpack/src/osc/OscTypes.cpp; sourceTree = SOURCE_ROOT; };
 		DF49D76C45D5DB505A234880 /* ofxOscMessage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxOscMessage.cpp; path = ../../../addons/ofxOsc/src/ofxOscMessage.cpp; sourceTree = SOURCE_ROOT; };
@@ -356,8 +353,6 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				C630FC0018CBDB19007A723B /* SpriteSingleton.cpp */,
-				C630FC0118CBDB19007A723B /* SpriteSingleton.h */,
 				C630FBF118CBDA23007A723B /* Bullet.cpp */,
 				C630FBF218CBDA23007A723B /* Bullet.h */,
 				C630FBF318CBDA23007A723B /* Enemy.cpp */,
@@ -538,7 +533,6 @@
 				C630FBFD18CBDA23007A723B /* LevelController.cpp in Sources */,
 				C630FBFE18CBDA23007A723B /* Life.cpp in Sources */,
 				C630FBFF18CBDA23007A723B /* LiveTesting.cpp in Sources */,
-				C630FC0218CBDB19007A723B /* SpriteSingleton.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

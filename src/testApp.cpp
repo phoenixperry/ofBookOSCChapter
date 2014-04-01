@@ -1,7 +1,10 @@
 #include "testApp.h"
 
-//--------------------------------------------------------------
+
+
+//-------------------------------------------------------------
 void testApp::setup(){
+  
     game_state = "start";
     
     max_enemy_amplitude = 3.0;
@@ -14,7 +17,6 @@ void testApp::setup(){
     player_bullet_image.loadImage("player_bullet.png");
     start_screen.loadImage("start_screen.png");
     end_screen.loadImage("end_screen.png");
-    
     player_1.setup(&player_image);
     
     score_font.loadFont("Gota_Light.otf", 48);
@@ -22,15 +24,19 @@ void testApp::setup(){
     testing == true;
     if(testing == true){
         liveTest = LiveTesting();
-        max_enemy_shoot_interval = liveTest.max_enemy_shoot_interval;
-        max_enemy_amplitude = liveTest.max_enemy_amplitude;
-        level_controller.interval_time = liveTest.interval_time;
-
     }
 }
 
+
 //--------------------------------------------------------------
 void testApp::update(){
+    //setting up the sprites 
+//	sort( sprites.begin(), sprites.end(), sortVertically ); // sorts the sprites vertically so the ones that are lower are drawn later and there for in front of the ones that are higher up
+  
+    //cleans up sprites
+
+    
+    
     if (game_state == "start") {
         
         
@@ -68,12 +74,14 @@ void testApp::update(){
 
 //--------------------------------------------------------------
 void testApp::draw(){
+
     if (game_state == "start") {
         start_screen.draw(0,0);
     } else if (game_state == "game") {
         ofBackground(0,0,0);
         player_1.draw();
         draw_lives();
+    
         
         for (int i = 0; i < enemies.size(); i++) {
             enemies[i].draw();

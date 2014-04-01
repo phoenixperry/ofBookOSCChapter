@@ -7,9 +7,11 @@
 #include "Bullet.h"
 #include "Life.h"
 #include "LiveTesting.h"
-#include "SpriteSingleton.h"
+
 #include "ofxOsc.h"
-#include "ofxSpriteSheetRenderer.h"
+
+
+
 class testApp : public ofBaseApp{
 public:
     void setup();
@@ -48,9 +50,7 @@ public:
     ofImage start_screen;
     ofImage end_screen;
     ofImage life_image;
-    
-    ofxSpriteSheetRenderer* spriteRenderer;
-    SpriteSingleton sheet;
+
     LiveTesting liveTest;
     
     void update_bullets();
@@ -60,5 +60,7 @@ public:
     void draw_score();
     
     ofTrueTypeFont score_font;
-    bool testing; 
+    bool testing;
+   
+    
 };
