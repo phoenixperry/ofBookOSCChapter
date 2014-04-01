@@ -21,7 +21,7 @@ void testApp::setup(){
     
     score_font.loadFont("Gota_Light.otf", 48);
     //simply change this boolean to turn testing on and off
-    testing == true;
+    testing == false;
     if(testing == true){
         liveTest = LiveTesting();
     }
@@ -46,12 +46,17 @@ void testApp::update(){
         update_bullets();
         update_bonuses();
         
-        for (int i = 0; i < enemies.size(); i++) {
+        for (int i = enemies.size()-1; i >=0; i--) {
             enemies[i].update();
             if (enemies[i].time_to_shoot()) {
                 Bullet b;
                 b.setup(false, enemies[i].pos, enemies[i].speed, &enemy_bullet_image);
                 bullets.push_back(b);
+            }
+            if(enemies[i].pos.y> ofGetHeight() +50)
+            {
+                enemies.erase(enemies.begin()+i);
+                              
             }
         }
         
@@ -68,6 +73,7 @@ void testApp::update(){
             l.setup(&life_image);
             bonuses.push_back(l);
         }
+        
     }
     
 }
@@ -81,7 +87,7 @@ void testApp::draw(){
         ofBackground(0,0,0);
         player_1.draw();
         draw_lives();
-    
+
         
         for (int i = 0; i < enemies.size(); i++) {
             enemies[i].draw();

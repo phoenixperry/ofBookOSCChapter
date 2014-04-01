@@ -35,4 +35,5 @@ bool Enemy::time_to_shoot() {
         return true;
     }
     return false;
+
 }
